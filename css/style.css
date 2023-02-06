@@ -1,0 +1,351 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 150%;
+}
+
+body {
+    background: linear-gradient(90deg, #0e0f14, #1b2159);
+    background-size: cover;
+}
+
+header {
+    width: 98vw;
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.logo {
+    margin: 0.8vw 0vw;
+}
+
+.cont-box {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.left-box {
+    width: 50vw;
+    margin-left: 1.5vw;
+}
+
+#input-text {
+    border: solid 0.1vw #072B61;
+    width: 45vw;
+}
+
+.left-box textarea {
+    background: none;
+}
+
+.left-box textarea, .right-box textarea {
+    display: block;
+    border: none;
+    resize: none;
+    color: #0A3871;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+    border-radius: 15px;
+    padding: 20px;
+    height: 19.5rem;
+}
+
+.left-box textarea::placeholder, .right-box textarea::placeholder {
+    color: #0A3871;
+}
+
+.left-box textarea:focus, .right-box textarea:focus {
+    outline: none;
+}
+
+.nota {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    gap: 8px;
+}
+
+.nota img {
+    height: 16px;
+    width: 16px;
+}
+
+.nota p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 150%;
+    background: linear-gradient(90deg, #007CF0, #00DFD8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 25px;
+}
+
+#text-info.show {
+    text-shadow: 0 0 5px #FFF, 0 0  150px #00DFD8;
+    animation: horizontal-shaking 0.6s 2;
+}
+
+@keyframes horizontal-shaking {
+    0%   { transform: translateX(0)    }
+    25%  { transform: translateX(5px)  }
+    50%  { transform: translateX(-5px) }
+    75%  { transform: translateX(5px)  }
+    100% { transform: translateX(0);   }
+}
+
+.boton {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: flex-start;
+}
+
+.btn-encriptar {
+    border: solid 0.08vh #0A3871;
+    background-color: #0A3871;
+    color: #D8DFE8;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 24px;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 19px;
+    width: 20vw;
+}
+
+.btn-encriptar:hover {
+    background: linear-gradient(to bottom, #0A3871 5%, #072B61 100%);
+}
+
+.btn-encriptar:active {
+    border-color: black;
+    position: relative;
+    top: 1px;
+}
+
+.btn-desencriptar {
+    border: solid 0.08vh #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 24px;
+    border-radius: 24px;
+    line-height: 19px;
+    width: 20vw;
+}
+
+.btn-desencriptar:hover {
+    background:linear-gradient(to bottom, #D8DFE8 5%, #EFF1FA 100%);
+}
+
+.btn-desencriptar:active {
+    position: relative;
+    top: 1px;
+}
+
+.right-box {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 30vw;
+    border: 1px solid #102d67;
+}
+
+.right-box textarea {
+    background: no-repeat url(../img/muneco.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: auto;
+    font-size: 24px;
+    color: rgb(255, 252, 252);
+    width: 28.2vw;
+}
+
+#right-msg, .right-box .right-textarea {
+    background: linear-gradient(90deg, #379fcf, #25c55a); /* #7AE9B5, #00DFD8  */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#btn-copy {
+    display: none;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.btncopy {
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #4c97f2;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    line-height: 19px;
+    text-align: center;
+    width: 20vw;
+}
+
+.bton .btncopy:hover {
+    background: #EFF1FA;
+}
+
+.boton .btncopy:active {
+    position: relative;
+    top: 1px;
+}
+
+.tittle-right {
+    font-size: 1.5rem;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.note-right {
+    line-height: 150%;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 98vw;
+    margin: 2vw 0;
+    color: #072b61;
+    font-size: 100%;
+    text-align: center;
+    font-family: Tahoma;
+    background: linear-gradient(90deg, #4981d4 40%, #4bde29 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-top: 5vw;
+}
+
+.peru {
+    width: 24px;
+    height: 16px;
+}
+
+.github {
+    width: 22px;
+    height: 22px;
+}
+
+.linkedin {
+    width: 22px;
+    height: 22px;
+}
+
+.facebook {
+    width: 20px;
+    height: 20px;   
+}
+
+.instagram {
+    width: 20px;
+    height: 20px;
+}
+
+.youtube {
+    width: 20px;
+    height: 20px;
+}
+
+/* CSS for mobiles */ 
+
+@media (max-width:480px) {
+    main {
+        margin: 100%;
+    }
+    .right-box, .left-box {
+        width: 90vw;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #input-text, .right-box textarea {
+        width: 80vw;
+        background-size: 80vw;
+    }
+    .nota p {
+        font-size: 15px;
+    }
+    .btn-encriptar, .btn-desencriptar, .boton-copy {
+        width: 80vw;
+    }
+}
+
+/* CSS for Tablet / Ipads */ 
+
+@media (min-width:480px) and (max-width:840px){
+
+    main {
+        margin: 100vw;
+    }
+
+    .right-box, .left-box {
+        width: 90vw;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    #input-text {
+        width: 84vw;
+    }
+
+    .right-box textarea {
+        width: 84vw;
+        background-size: 84vw;
+    }
+
+    .nota p {
+        font-size: 15px;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 40vw;
+    }
+
+    .boton-copy {
+        width: 80vw;
+    }
+
+}
+
+/* CSS for Surface */
+
+@media(min-width:480px) and (max-width:1200px) {
+    .left-box {
+        width: 45vw;
+    }
+    #input-text {
+        width: 40vw;
+    }
+    .right-box {
+        width: 40vw;
+    }
+    .right-box textarea {
+        width: 38vw;
+        background-size: 38vw;
+    }
+}

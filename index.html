@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <title>¡Encriptador de Textos! | CBS</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><img src="img/Logo.png" alt="Logo"> </div>
+        </header>
+        <main class="cont-box">
+            <section class="left-box">
+                <textarea type  = "text" id="input-text" name="text-input" rows="10" placeholder="hola mundo" autocapitalize="none" autocomplete="off" spellcheck="false"></textarea>
+                <div class="nota">
+                    <img src="img/exclamation.png" alt="Exclamación">
+                    <p id="text-info">solo letras en minúsculas y sin acentos o simbolos</p>
+                </div>
+                <div class="boton">
+                    <button class="btn-encriptar" id="boton-encriptar" name="btnencriptar" type="button" value="encriptar">Encriptar</button>
+                    <button class="btn-desencriptar" id="boton-desencriptar" name="btndesencriptar" type="button" value="encriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="right-box">
+                <textarea type="text" id="output-text" name="text-output" rows="10" autocapitalize="none" spellcheck="false" autocomplete="off"></textarea>
+                <div id="right-msg">
+                    <h6 class="tittle-right">Ningún mensaje fue <br>encontrado</h6>
+                    <p class="note-right">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="boton" id="btn-copy"><button class="btncopy">Copiar</button> </div>
+            </section>
+        </main>
+        <footer>
+            <img src="img/peru-flag.png" alt="Perú" class="peru"> <span>&copy; 2023 | Text Encrypter created by <strong>@cbuleje</strong> </span>
+            <a href="https://github.com/cbuleje"><img src="img/icon-github.png" alt="GitHub" class="github"></a>
+            <a href="https://www.linkedin.com/in/cbulejes/"><img src="img/icon-linkedin.png" alt="LinkedInd" class="linkedin"></a>
+            <!-- <a href="#"><img src="img/icon-facebook.png" alt="Facebook" class="facebook"></a>
+            <a href="#"><img src="img/icon-instagram.png" alt="Instagram" class="instagram"></a>
+            <a href="#"><img src="img/icon-youtube.png" alt="Youtube" class="youtube"></a> -->
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
